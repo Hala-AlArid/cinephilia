@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/borsok');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+@import url('https://fonts.cdnfonts.com/css/norwester');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0C192A;
+  }
+
+html {
+    font-size: 62.5%;
+    font-family: 'Aleo', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.background{
+  background-color: rgba(12, 25, 42, 0.096);
+}
+
+.banner{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerImgOverlay{
+  background-color: #0C192A;
+  opacity: .6;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bannerText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3vw;
+    position: absolute;
+    font-size: 20px;
+}
+
+.bannerh1{
+    color: white;
+    font-family: 'Aleo', serif;
+    letter-spacing: .5vw;
+}
+
+.bannerh3{
+    color: white;
+    font-family: 'Norwester', sans-serif;    
+}
+
+.bannerh3 a{
+    color: #AA1D1D;
+}
+
+.bannerh3 a:hover{
+    color: #ce2c2c;
+}
+
+.bannerBtn{
+  width: 120px;
+  padding: 10px;
+  background-color: #AA1D1D;
+  color: white;
+  font-weight: 600;
+  border: 2px solid #AA1D1D;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.bannerBtn:hover{
+  background-color: transparent;
+}
+
+
+/* .image-slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  } */
+
+  /* .slide-title{
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+
+  }
+
+  .slide-overlay{
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+    background: #0C192A;
+    padding: 20px;
+    opacity: .3;
+
+  } */
+
+  /* .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+  } */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    font-family: 'Aleo';
+    text-align: center;
+  }
+  
+  .footer p{
+    width: 70%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .bannerText{
+      font-size: 15px;
+    }
+
+    .footer{
+      font-size: 1rem;
+    }
+
+    .footer p{
+      width: 100%;
+    }
+  }
+
+

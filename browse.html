@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/browsePage/browse.css">
+    <link rel="stylesheet" href="css/SingleMoviePage/SingleMovie.css">
+    <link rel="stylesheet" href="css/homePage/index.css">
+    <link rel="stylesheet" href="css/homePage/modal.css">
+    <link rel="stylesheet" href="css/browsePage/navbar2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <title>cinePhilia</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="CinePhilia logo"></a>
+
+          <div class="search">
+            <input type="text" class="searchTerm" placeholder="What are you looking for?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'What are you looking for?'">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search p-4 bg-gray-200 rounded-lg" id="search-icon"></i>
+           </button>
+         </div>
+
+         <ul class="nav-menu selectfilter">
+          <a href="#" id="filter1">Popular</a>
+          <a href="#" id="filter2">Top</a>
+          <a href="#" id="filter3">New</a>
+          <a href="#" id="filter4">Soon</a>
+          <a href="index.html" class="nav-link">Home</a>
+      </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="genres-container">
+  
+      </div> 
+
+
+</header>
+
+<!-- Modal content -->
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+<div class="backarrow"><span class="fa fa-arrow-left"></span>Back</div>
+
+<div class="page-des"></div>
+
+        <div class="container">
+          <div class="loader"></div>
+        </div>
+
+    <script type="text/javascript" src="script.js" defer></script>
+    <script type="text/javascript" src="index.js" defer></script>
+</body>
+</html>

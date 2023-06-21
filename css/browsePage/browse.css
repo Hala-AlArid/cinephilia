@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/borsok');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+@import url('https://fonts.cdnfonts.com/css/norwester');
+
+body{
+  background-image: linear-gradient(#0b1829, #344355);
+  background-repeat: no-repeat;
+}
+
+/* this is for all movies */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 200px;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.movies-container {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin: 0 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.actors-container {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin: 0 50px;
+  justify-content: center;
+}
+
+.castSection{
+  margin-top: 50px;
+}
+
+.movie-card{
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 20px;
+  width: 185px;
+  height: 280px;
+}
+
+.actor-card{
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(163, 163, 163);
+  display: flex;
+  flex-direction: column;
+  width: 155px;
+  height: 280px;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+}
+
+.movie-poster{
+  width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.actor-poster{
+  margin: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 130px;
+}
+
+.movie-RD{
+  color: rgb(138, 138, 138);
+  margin: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7c94b4;
+  border-radius: 20px;
+}
+
+.movie-card:hover .overlay {
+  opacity: 0.9;
+  cursor:pointer;
+}
+
+.img-description, .view-actor {
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.page-des{
+  color: white;
+  text-align: center;
+  margin: 20px;
+  word-spacing: 3px;
+}
+
+.page-des h1{
+  margin-bottom: 5px;
+}
+
+.page-des hr{
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+
+/* style for actors page */
+
+.container2{
+  display: grid;
+  grid-template-columns: auto;
+
+}
+
+
+/* this is for movie details */
+
+
+#company-name{
+  margin-bottom: 20px;
+}
+
+#actors {
+    margin: 24px 16px 0 0;
+}
+
+#actor-backdrop{
+  height: 400px;
+  width: 350px;
+}
+
+.actorDiv{
+  height: 400px;
+  width: 350px; 
+}
+
+/* this class is used to style the movies of each actor and the actors of each movie*/
+.ActorMovies{
+  height: 400px;
+  width: 350px;
+}
+
+@media only screen and (max-width: 431px) and (min-width: 340px) {
+  
+  .movies-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .actors-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
